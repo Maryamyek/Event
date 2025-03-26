@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e995dcdd-aafb-43ab-bb31-4b9162cd739e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Eventify.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eventify/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eventify/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eventify/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eventify/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eventify/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event_link/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event_link/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-    </list>
+    <list default="true" id="e995dcdd-aafb-43ab-bb31-4b9162cd739e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,6 +91,7 @@
       <workItem from="1742853106464" duration="1005000" />
       <workItem from="1742854208652" duration="2182000" />
       <workItem from="1743030014256" duration="2779000" />
+      <workItem from="1743033080249" duration="352000" />
     </task>
     <servers />
   </component>
