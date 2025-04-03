@@ -36,4 +36,3 @@ class Participation(models.Model):
         return f"{self.user.first_name} {self.user.last_name}"
 
 
-
