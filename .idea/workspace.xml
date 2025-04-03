@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e995dcdd-aafb-43ab-bb31-4b9162cd739e" name="Changes" comment="" />
+    <list default="true" id="e995dcdd-aafb-43ab-bb31-4b9162cd739e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eventify/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eventify/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event_link/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/event_link/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event_link/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/event_link/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event_link/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/event_link/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event_link/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/event_link/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,11 +99,25 @@
       <workItem from="1742853106464" duration="1005000" />
       <workItem from="1742854208652" duration="2182000" />
       <workItem from="1743030014256" duration="2779000" />
-      <workItem from="1743033080249" duration="656000" />
+      <workItem from="1743033080249" duration="1001000" />
+      <workItem from="1743710296628" duration="640000" />
+      <workItem from="1743711020779" duration="373000" />
+      <workItem from="1743711416447" duration="938000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
