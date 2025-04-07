@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'drf_yasg',
 
     # app_name
+    'authentication',
     'event_link'
 
 ]
@@ -50,6 +51,9 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
 }
+
+# AUTH_USER_MODEL = 'authentication.CustomUser'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

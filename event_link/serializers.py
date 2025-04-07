@@ -20,6 +20,8 @@ class EventSerializer(serializers.ModelSerializer):
 
 
 
+
+
 class ParticipationSerializer(serializers.ModelSerializer):
     user = UserSerializer(read_only=True)
     event = EventSerializer(read_only=True)
