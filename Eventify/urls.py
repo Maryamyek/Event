@@ -8,7 +8,7 @@ from drf_yasg import openapi
 # swagger url
 schema_view = get_schema_view(
     openapi.Info(
-        title="Timing-app API",
+        title="ٍEventify API",
         default_version='v1',
         description="Simple Clockify app api",
     ),
