@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e995dcdd-aafb-43ab-bb31-4b9162cd739e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/authentication/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eventify/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eventify/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eventify/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eventify/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event_link/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/event_link/serializers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +110,10 @@
       <workItem from="1743725550889" duration="469000" />
       <workItem from="1743889145669" duration="7235000" />
       <workItem from="1743974001352" duration="7622000" />
-      <workItem from="1744014524249" duration="2749000" />
+      <workItem from="1744014524249" duration="3979000" />
+      <workItem from="1744118657112" duration="1790000" />
+      <workItem from="1744120548473" duration="180000" />
+      <workItem from="1744153710846" duration="2576000" />
     </task>
     <servers />
   </component>
