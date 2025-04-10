@@ -5,15 +5,15 @@ from rest_framework.exceptions import ValidationError
 from rest_framework import generics, permissions
 from rest_framework import generics, status
 from rest_framework.response import Response
-
+from rest_framework.permissions import AllowAny
 
 
 
 # View برای مدیریت ایونت‌ها
 class EventListCreateView(generics.ListCreateAPIView):
-    queryset = Event.objects.all()
+    queryset = Event.objects.filter(status='open')
     serializer_class = EventSerializer
-    # permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [AllowAny]
 
     def perform_create(self, serializer):
         try:
@@ -44,7 +44,7 @@ class ParticipationListCreateView(generics.ListCreateAPIView):
     # permissions_classes = [permissions.IsAuthenticated]
     def perform_create(self, serializer):
         try:
-            serializer.save()
+            serializer.save(user=self.request.user)
         except ValidationError as e:
             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 

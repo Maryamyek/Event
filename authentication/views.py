@@ -2,12 +2,8 @@ from .serializers import UserSerializer
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from rest_framework_simplejwt.tokens import RefreshToken
-from rest_framework_simplejwt.views import TokenBlacklistView
 from rest_framework.permissions import AllowAny
-from rest_framework.permissions import IsAuthenticated
-from rest_framework_simplejwt.token_blacklist.models import BlacklistedToken, OutstandingToken
 from rest_framework import generics, serializers
-from rest_framework_simplejwt.views import TokenRefreshView
 from rest_framework.response import Response
 from rest_framework import status
 
@@ -52,33 +48,4 @@ class LoginView(generics.GenericAPIView):
         return Response({"error": "Invalid Credentials"}, status=status.HTTP_401_UNAUTHORIZED)
 
 
-# -------------------------------
 
-# ویو برای لاگ اوت
-
-class LogoutSerializer(serializers.Serializer):
-    # ضوابط مورد نیاز
-    pass
-
-class LogoutView(generics.GenericAPIView):
-    permission_classes = [IsAuthenticated]
-
-    def get_serializer_class(self):
-        return LogoutSerializer
-
-    def post(self, request):
-        # بلاک کردن توکن فعلی
-        try:
-            # با توجه به `request.auth`، بلاک کردن توکن
-            OutstandingToken.objects.filter(token=request.auth).delete()  # حذف توکن
-            return Response({"detail": "Successfully logged out."}, status=status.HTTP_205_RESET_CONTENT)
-        except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
-
-
-# ------------------------
-
-# ویو برای تولید توکن جدید
-
-class CustomTokenRefreshView(TokenRefreshView):
-        permission_classes = [AllowAny]
