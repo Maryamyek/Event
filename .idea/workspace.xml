@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e995dcdd-aafb-43ab-bb31-4b9162cd739e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/event_link/migrations/0003_event_participants_alter_participation_event.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/event_link/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/event_link/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event_link/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/event_link/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event_link/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/event_link/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event_link/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/event_link/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +117,8 @@
       <workItem from="1744240271983" duration="8651000" />
       <workItem from="1744293240523" duration="5822000" />
       <workItem from="1744320581898" duration="2955000" />
-      <workItem from="1744325356053" duration="4435000" />
+      <workItem from="1744325356053" duration="4651000" />
+      <workItem from="1744330484461" duration="307000" />
     </task>
     <servers />
   </component>

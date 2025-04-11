@@ -23,6 +23,10 @@ class Event(models.Model):
     def __str__(self):
         return self.name
 
+    def save(self, *args, **kwargs):
+        self.clean()
+        super().save(*args, **kwargs)
+
     def clean(self):
         if self.end_time <= self.start_time:
             raise ValidationError("End time must be after start time.")
@@ -49,6 +53,10 @@ class Participation(models.Model):
 
     def __str__(self):
         return f"{self.user.first_name} {self.user.last_name}"
+
+    def save(self, *args, **kwargs):
+        self.clean()
+        super().save(*args, **kwargs)
 
     def clean(self):
         participation_limit = 5  # حداکثر تعداد ایونت‌هایی که هر کاربر می‌تواند در آن‌ها عضو شود

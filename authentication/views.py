@@ -17,14 +17,14 @@ class RegisterView(generics.CreateAPIView):
         serializer.is_valid(raise_exception=True)
         self.perform_create(serializer)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
-# --------------------------
+# -----------------------------------------
 
 # سریالایزر برای ورود
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField(required=True)
     password = serializers.CharField(required=True)
 
-
+# --------------------------------------
 
 # ویو برای ورود و تولید توکن
 class LoginView(generics.GenericAPIView):
