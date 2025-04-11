@@ -23,16 +23,23 @@ class EventSerializer(serializers.ModelSerializer):
 
 
 class ParticipationSerializer(serializers.ModelSerializer):
-    user = UserSerializer(read_only=True)
-    event = EventSerializer(read_only=True)
-
+    event = serializers.PrimaryKeyRelatedField(queryset=Event.objects.all(), required=True)
     class Meta:
         model = Participation
-        fields = ['user', 'event', 'joined_at']
-        read_only_fields = ['user', 'event', 'joined_at']
+        fields = ['event']
 
+
+        def validate_event(self, value):
+            # اعتبارسنجی کمپنی در ایونت
+            if not Event.objects.filter(id=value.id, status='open').exists():
+                raise serializers.ValidationError("This event is not available for joining.")
+
+            return value
+
+# -------------------------
 
 class EventCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Event
         fields = ['name', 'description', 'capacity', 'start_time', 'end_time', 'location']
+

@@ -12,6 +12,7 @@ class Event(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
     capacity = models.PositiveIntegerField()
+    participants = models.ManyToManyField(User, related_name='participated_events', blank=True)
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='open')
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
@@ -43,7 +44,7 @@ class Event(models.Model):
 
 class Participation(models.Model):
     user = models.ForeignKey(User, related_name='participations', on_delete=models.CASCADE)
-    event = models.ForeignKey(Event, related_name='participants', on_delete=models.CASCADE)
+    event = models.ForeignKey(Event, related_name='event_participants', on_delete=models.CASCADE)
     joined_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
